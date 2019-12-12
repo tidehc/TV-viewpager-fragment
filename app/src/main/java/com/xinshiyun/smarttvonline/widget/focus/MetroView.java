@@ -18,7 +18,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.xinshiyun.smarttvonline.R;
-import com.xinshiyun.smarttvonline.constant.Constants;
+
 import com.xinshiyun.smarttvonline.utils.AnimationUtil;
 
 
@@ -43,6 +43,8 @@ public class MetroView extends RelativeLayout {
     private boolean isRefresh = false;
     private OnItemFocusChangedListener onItemFocusChangedListener;
     private Context context;
+
+    public static final float SCALE_RATE = 1.05f;
 
     private Handler mStartHandler = new Handler() {
         public void handleMessage(Message msg) {
@@ -171,7 +173,7 @@ public class MetroView extends RelativeLayout {
             getRootView().invalidate();
             if (hasAnim) {
                 scaleAnimation = AnimationUtil.startScaleToBigAnimation(this,
-                        Constants.SCALE_RATE, new AnimatorListener() {
+                        SCALE_RATE, new AnimatorListener() {
 
                             @Override
                             public void onAnimationStart(Animator arg0) {
@@ -209,7 +211,7 @@ public class MetroView extends RelativeLayout {
         } else {
             if (hasAnim) {
                 scaleAnimation = AnimationUtil.startScaleToSmallAnimation(this,
-                        Constants.SCALE_RATE, null);
+                        SCALE_RATE, null);
             }
         }
     }

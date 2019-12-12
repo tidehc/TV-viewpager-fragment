@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.RelativeLayout;
@@ -23,6 +22,7 @@ import com.xinshiyun.smarttvonline.widget.NoScrollViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class ViewPagerActivity extends AppCompatActivity implements View.OnFocusChangeListener, View.OnClickListener {
     private static final String TAG = "ViewPagerActivity";

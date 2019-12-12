@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.xinshiyun.smarttvonline.R;
 import com.xinshiyun.smarttvonline.widget.focus.MetroView;
 
+
 /**
  * author: 王可可
  * Created on 2018/1/4.
