@@ -16,11 +16,7 @@
         android:theme="@style/AppTheme"
         >
         <activity android:name=".activity.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <!-- 关闭硬件加速视频无画面，单独开启视频activity -->
         <activity
@@ -28,7 +24,13 @@
             android:hardwareAccelerated="true" />
         <activity android:name=".activity.recycler.HorizontalRecyclerViewActivity" />
         <activity android:name=".activity.recycler.VerticalRecyclerViewActivity" />
-        <activity android:name=".activity.viewpager.ViewPagerActivity" />
+        <activity android:name=".activity.viewpager.ViewPagerActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activity.recycler.ListRecyclerViewActivity" />
         <activity android:name=".activity.webview.WebViewActivity" />
         <activity android:name=".activity.imageswitch.ImageSwitchActivity"></activity>

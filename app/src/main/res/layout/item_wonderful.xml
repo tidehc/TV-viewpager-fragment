@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_img_iv" android:background="@mipmap/bg_recommend_default" android:layout_width="1920.0px" android:layout_height="1080.0px" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="center" android:id="@id/video_play_btn_iv" android:visibility="gone" android:layout_width="@dimen/px_positive_140" android:layout_height="@dimen/px_positive_140" android:src="@drawable/selector_video_play" />
+    <com.hpplay.happyplay.aw.view.MProgressbar android:layout_gravity="bottom" android:id="@id/download_pgb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/px_positive_10" />
+</FrameLayout>

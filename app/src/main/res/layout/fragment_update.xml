@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff2f2e2f" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/update_checking_ll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/px_positive_57" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/checking_apk_update" />
+        <ProgressBar android:layout_width="@dimen/px_positive_50" android:layout_height="@dimen/px_positive_50" android:indeterminateDrawable="@drawable/dialog_black_mi" android:indeterminateDuration="500" android:indeterminateBehavior="repeat" style="?android:attr/progressBarStyleLarge" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/update_result_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/px_positive_29" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/version_update" />
+        <TextView android:textSize="@dimen/px_positive_38" android:textColor="#ffffffff" android:gravity="center" android:id="@id/update_result_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_5" android:text="@string/checking_apk_update" />
+        <Button android:textSize="@dimen/px_positive_39" android:textColor="@color/white" android:id="@id/update_ok_btn" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/px_positive_380" android:layout_height="@dimen/px_positive_98" android:layout_marginTop="@dimen/px_positive_70" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/updating_ll" android:paddingBottom="@dimen/px_positive_100" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/px_positive_38" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/soft_down_loading" />
+        <ProgressBar android:id="@id/apk_update_progressbar" android:layout_width="@dimen/px_positive_550" android:layout_height="@dimen/px_positive_10" android:layout_marginTop="@dimen/px_positive_68" android:progressDrawable="@drawable/progress_apk_update" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+</RelativeLayout>

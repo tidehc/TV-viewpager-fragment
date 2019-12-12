@@ -30,15 +30,15 @@ public class WebViewActivity extends AppCompatActivity {
         webView = (WebView) findViewById(R.id.webview);
 
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setDefaultTextEncodingName("utf-8") ;
+        webView.getSettings().setDefaultTextEncodingName("utf-8");
         webView.setBackgroundColor(0); // 设置背景色
         webView.getBackground().setAlpha(2); // 设置填充透明度 范围：0-255
 
         //步骤2. 选择加载方式
         //方式1. 加载一个网页：
-        if(!TextUtils.isEmpty(url)){
+        if (!TextUtils.isEmpty(url)) {
             webView.loadUrl(url);
-        }else {
+        } else {
             Toast.makeText(this, "url error", Toast.LENGTH_SHORT).show();
         }
 
@@ -50,8 +50,6 @@ public class WebViewActivity extends AppCompatActivity {
                 return true;
             }
         });
-
-
 
 
 //        webView.loadDataWithBaseURL(null, "加载中。。", "text/html", "utf-8",null);

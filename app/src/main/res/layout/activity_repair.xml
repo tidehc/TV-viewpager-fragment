@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/loading_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fixing_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/px_positive_57" android:textColor="#ffffffff" android:id="@id/fixing_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fix_connect" />
+        <com.hpplay.happyplay.aw.view.CircleProgress android:id="@id/fixing_progress" android:layout_width="@dimen/px_positive_90" android:layout_height="@dimen/px_positive_90" android:layout_marginTop="@dimen/px_positive_10" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fix_result_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/px_positive_38" android:textColor="#ffffffff" android:id="@id/result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

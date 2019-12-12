@@ -20,7 +20,7 @@ public class ArticleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_article,container,false);
+        View view = inflater.inflate(R.layout.fragment_article, container, false);
 
         return view;
     }

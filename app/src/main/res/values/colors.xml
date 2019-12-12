@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--
+Blue: #157efb
+Black Text: #262626
+Border: #b2b2b2
+Background: #fafaff
+-->
+    <color name="blue">#157EFB</color>
+    <color name="black_txt">#262626</color>
+    <color name="border">#b2b2b2</color>
+    <color name="bg">#fafaff</color>
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorWhite">#FFFFFF</color>
+
+    <color name="auth_failed">#ffffda60</color>
+    <color name="banner_bg">#7e464646</color>
+    <color name="banner_text_bg">#ff4a4a4a</color>
+    <color name="black">#ff000000</color>
+    <color name="blue_trans">#3300bbff</color>
+    <color name="col_222328">#ff222328</color>
+    <color name="col_70_opacity_white">#b3ffffff</color>
+    <color name="col_80_opacity_white">#d9ffffff</color>
+    <color name="custom_bg_color">#ff232121</color>
+    <color name="custom_dialog_background">#ff6b6a6f</color>
+    <color name="custom_dialog_stroke">#ff3d3d3d</color>
+    <color name="gray">#7f1a1a1a</color>
+    <color name="loading_bg">#ff222328</color>
+    <color name="purple">#ffa05fff</color>
+    <color name="purple_trans">#33a05fff</color>
+    <color name="trans_white_0">#ffffffff</color>
+    <color name="trans_white_10">#e5ffffff</color>
+    <color name="trans_white_100">#00ffffff</color>
+    <color name="trans_white_15">#d8ffffff</color>
+    <color name="trans_white_20">#ccffffff</color>
+    <color name="trans_white_25">#bfffffff</color>
+    <color name="trans_white_30">#b2ffffff</color>
+    <color name="trans_white_35">#a5ffffff</color>
+    <color name="trans_white_40">#99ffffff</color>
+    <color name="trans_white_45">#8cffffff</color>
+    <color name="trans_white_5">#f2ffffff</color>
+    <color name="trans_white_50">#7fffffff</color>
+    <color name="trans_white_55">#72ffffff</color>
+    <color name="trans_white_60">#66ffffff</color>
+    <color name="trans_white_65">#59ffffff</color>
+    <color name="trans_white_70">#4cffffff</color>
+    <color name="trans_white_75">#3fffffff</color>
+    <color name="trans_white_80">#33ffffff</color>
+    <color name="trans_white_85">#21ffffff</color>
+    <color name="trans_white_90">#19ffffff</color>
+    <color name="trans_white_95">#0cffffff</color>
     <color name="transparent">#00000000</color>
+    <color name="transparent_20">#33ffffff</color>
+    <color name="update_red">#fffe3b31</color>
+    <color name="white">#ffffffff</color>
 </resources>

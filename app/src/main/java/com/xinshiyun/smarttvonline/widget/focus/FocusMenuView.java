@@ -115,7 +115,7 @@ public class FocusMenuView extends RelativeLayout {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        Log.e("onDraw","-------- onDraw");
+        Log.e("onDraw", "-------- onDraw");
         if (hasFocus() && mDrawable != null) {
             /*super.getDrawingRect(mRect);
             setBackground(null);

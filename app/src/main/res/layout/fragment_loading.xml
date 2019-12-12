@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/loading_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/requesting_ll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/px_positive_57" android:textColor="#ffffffff" android:id="@id/fixing_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_data" />
+        <com.hpplay.happyplay.aw.view.CircleProgress android:id="@id/fixing_progress" android:layout_width="@dimen/px_positive_90" android:layout_height="@dimen/px_positive_90" android:layout_marginTop="@dimen/px_positive_10" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/request_time_out_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="@dimen/px_positive_325" android:layout_height="@dimen/px_positive_260" android:src="@mipmap/request_time_out" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/px_positive_30" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_39" android:text="@string/request_time_out" />
+        <Button android:textSize="@dimen/px_positive_30" android:id="@id/retry_btn" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/px_positive_380" android:layout_height="@dimen/px_positive_98" android:layout_marginTop="@dimen/px_positive_48" android:text="@string/retry" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/request_failed_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="@dimen/px_positive_325" android:layout_height="@dimen/px_positive_260" android:src="@mipmap/request_failed" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/px_positive_30" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_39" android:text="@string/network_not_connect" />
+    </LinearLayout>
+</FrameLayout>

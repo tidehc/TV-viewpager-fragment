@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/px_positive_56" android:textColor="#ffffffff" android:id="@id/file_type_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/px_positive_80" />
+    <LinearLayout android:textSize="@dimen/px_positive_42" android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/item_layout" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/px_positive_340">
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+        <ImageView android:id="@id/device_im" android:layout_width="@dimen/px_positive_134" android:layout_height="@dimen/px_positive_100" android:src="@mipmap/storage_f" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+        <com.hpplay.happyplay.aw.dmp.MarqueTextView android:textSize="@dimen/px_positive_42" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/device_im" android:marqueeRepeatLimit="marquee_forever" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+    </LinearLayout>
+</FrameLayout>

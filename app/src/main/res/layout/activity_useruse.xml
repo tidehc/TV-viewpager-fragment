@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@mipmap/setting_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/back_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_positive_40" android:layout_marginTop="@dimen/px_positive_115">
+            <ImageView android:layout_width="@dimen/px_positive_36" android:layout_height="@dimen/px_positive_36" android:src="@mipmap/back" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/px_positive_48" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_positive_66" android:text="@string/user_use" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="@dimen/px_positive_724" android:layout_marginTop="@dimen/px_positive_91">
+            <com.hpplay.happyplay.aw.view.MyScrollView android:id="@id/content_sv" android:scrollbars="none" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="@dimen/px_positive_692">
+                <LinearLayout android:orientation="vertical" android:id="@id/content_ll" android:paddingLeft="@dimen/px_positive_40" android:paddingRight="@dimen/px_positive_40" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </com.hpplay.happyplay.aw.view.MyScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

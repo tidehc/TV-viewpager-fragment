@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/main_fm_content_fl" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/video_paly_rl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/video_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/curtain_view" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:id="@id/video_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:indeterminateDrawable="@anim/loading" android:indeterminateDuration="500" android:indeterminateBehavior="repeat" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/video_play_btn_iv" android:layout_width="@dimen/px_positive_140" android:layout_height="@dimen/px_positive_140" android:src="@drawable/selector_video_play" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/pic_iv" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <FrameLayout android:id="@id/tab_qr_layout" android:layout_width="@dimen/px_positive_500" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/tab_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_256" />
+        <TextView android:textSize="@dimen/px_positive_36" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@id/qr_tv" android:background="@drawable/qr_bg_n" android:paddingLeft="@dimen/px_positive_23" android:paddingTop="@dimen/px_positive_23" android:paddingRight="@dimen/px_positive_23" android:paddingBottom="@dimen/px_positive_5" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_positive_48" android:layout_marginBottom="@dimen/px_positive_125" android:text="扫码连接" android:drawablePadding="@dimen/px_positive_5" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/main_fm_tile_fl" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_positive_80" android:layout_marginRight="@dimen/px_positive_80" />
+        <FrameLayout android:id="@id/main_fm_info_fl" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/main_fm_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

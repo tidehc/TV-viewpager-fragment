@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.xinshiyun.smarttvonline.R;
- 
 import com.xinshiyun.smarttvonline.activity.viewpager.ViewPagerActivity;
 
 /**
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 //startActivity(new Intent(this, HorizontalRecyclerViewActivity.class));
                 break;
             case R.id.item2:
-               // startActivity(new Intent(this, VerticalRecyclerViewActivity.class));
+                // startActivity(new Intent(this, VerticalRecyclerViewActivity.class));
                 break;
             case R.id.item3:
 //                Toast.makeText(this, "点击了item3", Toast.LENGTH_SHORT).show();
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 //startActivity(new Intent(this, OnlineVideoActivity.class));
                 break;
             case R.id.item5:
-               // startActivity(new Intent(this, ListRecyclerViewActivity.class));
+                // startActivity(new Intent(this, ListRecyclerViewActivity.class));
 //                Toast.makeText(this, "点击了item5", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.item6:
@@ -57,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "点击了item8", Toast.LENGTH_SHORT).show();
                 break;
         }
-
 
 
     }

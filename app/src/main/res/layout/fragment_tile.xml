@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px_positive_40" android:layout_weight="1.0">
+        <HorizontalScrollView android:id="@id/table_tile_sv" android:focusable="false" android:focusableInTouchMode="false" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_39" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/tile_tab_ll" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <com.hpplay.happyplay.aw.view.PointImageView android:id="@id/setting_iv" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/px_positive_66" android:layout_height="@dimen/px_positive_66" android:layout_marginTop="@dimen/px_positive_35" android:src="@mipmap/set_home_default" android:scaleType="fitCenter" app:radius="@dimen/px_positive_11" />
+</LinearLayout>

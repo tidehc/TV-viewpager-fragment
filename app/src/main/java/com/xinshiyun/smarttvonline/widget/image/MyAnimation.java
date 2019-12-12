@@ -12,13 +12,13 @@ public class MyAnimation extends Animation {
     private float centerY;
     private int duration;
     private float rotate;
-    private Camera camera=new Camera();
+    private Camera camera = new Camera();
 
-    public MyAnimation(float x,float y,int duration,float rotate){
-        centerX=x;
-        centerY=y;
-        this.duration=duration;
-        this.rotate=rotate;
+    public MyAnimation(float x, float y, int duration, float rotate) {
+        centerX = x;
+        centerY = y;
+        this.duration = duration;
+        this.rotate = rotate;
     }
 
     @Override
@@ -33,11 +33,11 @@ public class MyAnimation extends Animation {
     protected void applyTransformation(float interpolatedTime, Transformation t) {
         super.applyTransformation(interpolatedTime, t);
         camera.save();
-        camera.rotateY(rotate*(interpolatedTime));
-        Matrix matrix=t.getMatrix();
+        camera.rotateY(rotate * (interpolatedTime));
+        Matrix matrix = t.getMatrix();
         camera.getMatrix(matrix);
-        matrix.preTranslate(-centerX,-centerY);
-        matrix.postTranslate(centerX,centerY);
+        matrix.preTranslate(-centerX, -centerY);
+        matrix.postTranslate(centerX, centerY);
         camera.restore();
     }
 }

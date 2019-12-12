@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/custom_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/blur_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <View android:background="#b3748388" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/custom_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:paddingRight="@dimen/px_positive_80" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/px_positive_56" android:textColor="#ffffffff" android:id="@id/ac_about_1" android:paddingBottom="@dimen/px_positive_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_connect_us" android:includeFontPadding="false" android:alpha="0.9" />
+                <TextView android:textSize="@dimen/px_positive_40" android:textColor="#ffffffff" android:id="@id/ac_about_2" android:paddingBottom="@dimen/px_positive_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_43" android:text="@string/if_doubt_contact" android:includeFontPadding="false" android:alpha="0.9" />
+                <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/px_positive_6" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/px_positive_40" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buisness_coopration_hint" android:includeFontPadding="false" android:alpha="0.9" />
+                    <TextView android:textSize="@dimen/px_positive_40" android:textColor="#ffffffff" android:id="@id/ac_about_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buisness_coopration_number" android:includeFontPadding="false" android:alpha="0.9" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/px_positive_40" android:textColor="#ffffffff" android:id="@id/ac_about_5" android:paddingBottom="@dimen/px_positive_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_24" android:text="@string/wechat_scan_flow" android:includeFontPadding="false" android:alpha="0.9" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:paddingLeft="@dimen/px_positive_160" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_positive_80">
+            <LinearLayout android:orientation="vertical" android:id="@id/contact_us_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ac_about_img" android:background="@android:color/transparent" android:layout_width="@dimen/px_positive_340" android:layout_height="@dimen/px_positive_340" android:layout_marginTop="@dimen/px_positive_20" />
+                <TextView android:textSize="@dimen/px_positive_33" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ac_about_6" android:paddingBottom="@dimen/px_positive_6" android:layout_width="@dimen/px_positive_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_10" android:text="@string/weixingongzonghao" android:includeFontPadding="false" />
+            </LinearLayout>
+            <ImageView android:id="@id/contact_us_qq" android:visibility="gone" android:layout_width="@dimen/px_positive_385" android:layout_height="@dimen/px_positive_110" android:src="@mipmap/contact_us_qq" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

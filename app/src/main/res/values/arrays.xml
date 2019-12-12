@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fps_max_name">
+        <item>@string/fps_max_auto</item>
+        <item>30FPS</item>
+        <item>60FPS</item>
+    </string-array>
+    <string-array name="fps_table_name">
+        <item>1920*1080</item>
+        <item>1280*720</item>
+        <item>1280*1080</item>
+    </string-array>
+    <string-array name="mirror_player">
+        <item>@string/item_adaptive</item>
+        <item>@string/mirror_model_force</item>
+        <item>@string/mirror_model_Non_force</item>
+    </string-array>
+    <string-array name="show_player_value">
+        <item>@string/item_player_auto</item>
+        <item>@string/item_player_system</item>
+        <item>@string/item_player_lebo</item>
+    </string-array>
+    <string-array name="show_quality_value">
+        <item>@string/item_adaptive</item>
+        <item>@string/item_normal</item>
+        <item>@string/item_compatibility</item>
+    </string-array>
+    <string-array name="show_rate_value">
+        <item>@string/item_open</item>
+        <item>@string/item_close</item>
+    </string-array>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@mipmap/setting_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cast_check" android:focusable="true" android:layout_width="@dimen/px_positive_446" android:layout_height="@dimen/px_positive_242">
+        <ImageView android:layout_width="@dimen/px_positive_80" android:layout_height="@dimen/px_positive_80" android:src="@mipmap/hotel_set_detection_pre" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/px_positive_36" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_12" android:text="@string/detection" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/protection" android:focusable="true" android:layout_width="@dimen/px_positive_446" android:layout_height="@dimen/px_positive_242" android:layout_marginLeft="@dimen/px_positive_16" android:layout_toRightOf="@id/cast_check">
+        <ImageView android:layout_width="@dimen/px_positive_80" android:layout_height="@dimen/px_positive_80" android:src="@mipmap/hotel_set_protection" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/px_positive_36" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_12" android:text="@string/protection" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fixt" android:focusable="true" android:layout_width="@dimen/px_positive_446" android:layout_height="@dimen/px_positive_242" android:layout_marginLeft="@dimen/px_positive_16" android:layout_toRightOf="@id/protection">
+        <ImageView android:layout_width="@dimen/px_positive_80" android:layout_height="@dimen/px_positive_80" android:src="@mipmap/hotel_set_repair_pre" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/px_positive_36" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_12" android:text="@string/repair" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/user_use" android:focusable="true" android:layout_width="@dimen/px_positive_446" android:layout_height="@dimen/px_positive_242" android:layout_marginTop="@dimen/px_positive_16" android:layout_below="@id/cast_check">
+        <ImageView android:layout_width="@dimen/px_positive_80" android:layout_height="@dimen/px_positive_80" android:src="@mipmap/hotel_set_help" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/px_positive_36" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_12" android:text="@string/user_use" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/version_update" android:focusable="true" android:layout_width="@dimen/px_positive_446" android:layout_height="@dimen/px_positive_242" android:layout_marginLeft="@dimen/px_positive_16" android:layout_marginTop="@dimen/px_positive_16" android:layout_toRightOf="@id/cast_check" android:layout_below="@id/cast_check">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/version_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.hpplay.happyplay.aw.view.PointImageView android:layout_width="@dimen/px_positive_80" android:layout_height="@dimen/px_positive_80" android:src="@mipmap/hotel_set_update" android:scaleType="fitXY" app:pointPadding="@dimen/px_positive_7" app:radius="@dimen/px_positive_11" />
+            <TextView android:textSize="@dimen/px_positive_36" android:textColor="@color/white" android:gravity="center" android:id="@id/version_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_12" android:text="@string/version_update" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/px_positive_20" android:textColor="@color/white" android:id="@id/version_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/version_icon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/setting" android:focusable="true" android:layout_width="@dimen/px_positive_446" android:layout_height="@dimen/px_positive_242" android:layout_marginLeft="@dimen/px_positive_16" android:layout_marginTop="@dimen/px_positive_16" android:layout_toRightOf="@id/version_update" android:layout_below="@id/cast_check">
+        <ImageView android:layout_width="@dimen/px_positive_80" android:layout_height="@dimen/px_positive_80" android:src="@mipmap/hotel_set_set_copy" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/px_positive_36" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_12" android:text="@string/setting" />
+    </LinearLayout>
+</RelativeLayout>

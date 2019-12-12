@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_view_pager"
+    android:id="@+id/rl_view_pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_sport"
+    android:background="@mipmap/bg"
     tools:context="com.xinshiyun.smarttvonline.activity.viewpager.ViewPagerActivity">
 
     <LinearLayout
         android:id="@+id/layout_menu"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_120"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_positive_40"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:gravity="center"
@@ -18,59 +19,54 @@
 
         <CheckBox
             android:id="@+id/menu_home"
-            android:layout_width="@dimen/dp_200"
-            android:layout_height="@dimen/dp_120"
-            android:background="@drawable/btn_check_selector"
-            android:gravity="center"
-            android:textColor="@color/colorWhite"
-            android:textSize="18sp"
-            android:clickable="false"
-            android:text="首页"
+            android:layout_width="@dimen/px_positive_250"
+            android:layout_height="wrap_content"
             android:button="@null"
+            android:clickable="false"
             android:focusable="true"
-            />
+            android:gravity="center"
+            android:text="快播投屏"
+            android:textColor="@color/btn_color_selector"
+            android:textSize="18sp" />
 
         <CheckBox
             android:id="@+id/menu_message"
-            android:layout_width="@dimen/dp_200"
-            android:layout_height="@dimen/dp_120"
-            android:background="@drawable/btn_check_selector"
-            android:gravity="center"
-            android:textSize="18sp"
-            android:textColor="@color/colorWhite"
-            android:clickable="false"
-            android:text="消息"
+            android:layout_width="@dimen/px_positive_250"
+            android:layout_height="wrap_content"
+
             android:button="@null"
+            android:clickable="false"
             android:focusable="true"
-            />
+            android:gravity="center"
+            android:text="硬件投屏"
+            android:textColor="@color/btn_color_selector"
+            android:textSize="18sp" />
 
         <CheckBox
             android:id="@+id/menu_article"
-            android:layout_width="@dimen/dp_200"
-            android:layout_height="@dimen/dp_120"
-            android:background="@drawable/btn_check_selector"
-            android:gravity="center"
-            android:textSize="18sp"
-            android:textColor="@color/colorWhite"
-            android:clickable="false"
-            android:text="文章"
+            android:layout_width="@dimen/px_positive_250"
+            android:layout_height="wrap_content"
+
             android:button="@null"
+            android:clickable="false"
             android:focusable="true"
-            />
+            android:gravity="center"
+            android:text="投屏教程"
+            android:textColor="@color/btn_color_selector"
+            android:textSize="18sp" />
 
         <CheckBox
             android:id="@+id/menu_setting"
-            android:layout_width="@dimen/dp_200"
-            android:layout_height="@dimen/dp_120"
-            android:background="@drawable/btn_check_selector"
-            android:gravity="center"
-            android:textSize="18sp"
-            android:clickable="false"
-            android:textColor="@color/colorWhite"
-            android:text="设置"
+            android:layout_width="@dimen/px_positive_250"
+            android:layout_height="wrap_content"
+
             android:button="@null"
+            android:clickable="false"
             android:focusable="true"
-            />
+            android:gravity="center"
+            android:text="开发定制"
+            android:textColor="@color/btn_color_selector"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -80,5 +76,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/layout_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_positive_100"
+        android:layout_alignParentBottom="true"
+        android:background="#30000000"
+        >
+
+    </LinearLayout>
+
 
 </RelativeLayout>

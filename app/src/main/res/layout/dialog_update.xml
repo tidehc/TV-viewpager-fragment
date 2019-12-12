@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/update_dialog_bg" android:paddingLeft="@dimen/px_positive_60" android:paddingRight="@dimen/px_positive_60" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/px_positive_52" android:textColor="@color/white" android:gravity="center" android:id="@id/update_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_50" android:text="@string/soft_local_update_info" />
+    <ScrollView android:id="@id/update_content_sv" android:layout_width="wrap_content" android:layout_height="@dimen/px_positive_372" android:layout_marginTop="@dimen/px_positive_58" android:layout_marginBottom="@dimen/px_positive_10">
+        <LinearLayout android:orientation="vertical" android:id="@id/update_content_ll" android:layout_width="@dimen/px_positive_546" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/px_positive_34" android:textColor="@color/white" android:id="@id/update_des_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/px_positive_36" android:textColor="@color/white" android:id="@id/update_version_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_positive_25" />
+            <TextView android:textSize="@dimen/px_positive_36" android:textColor="@color/white" android:id="@id/update_time_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <com.hpplay.happyplay.aw.view.MProgressbar android:id="@id/update_pgb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/px_positive_9" android:layout_marginTop="@dimen/px_positive_68" />
+    <Button android:textSize="@dimen/px_positive_36" android:textColor="@color/white" android:gravity="center" android:id="@id/update_btn" android:background="@mipmap/update_button" android:layout_width="@dimen/px_positive_300" android:layout_height="@dimen/px_positive_108" android:layout_marginTop="@dimen/px_positive_68" android:layout_marginBottom="@dimen/px_positive_48" android:text="@string/update" />
+</LinearLayout>
